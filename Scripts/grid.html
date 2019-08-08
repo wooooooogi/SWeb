@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #grid {
+            border: 5px solid pink;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        /*    1fr은 나머지 영역을.*/
+        /*    둘 다 1fr인 경우 반, 그냥 분할 가능한 것*/
+        /*    caniuse.com*/
+        }
+        div {
+            border: 5px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div>NAVIGATION</div>
+        <div>ARTICLE</div>
+    </div>
+
+    <span>NAVIGATION</span>
+    <span>ARTICLE</span>
+</body>
+</html>

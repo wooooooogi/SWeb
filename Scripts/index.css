@@ -1,0 +1,36 @@
+#grid {
+    /*모든 ol 중 부모가 grid id를 가진 것*/
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+ul{
+    list-style:none;
+    list-style-type:none;
+}
+ol{
+    margin: 0;
+    padding: 33px;
+    border-right: 1px solid gray;
+}
+#grid #article {
+    padding-left: 25px;
+}
+@media(min-width: 800px) {
+    #grid {
+        display: grid;
+    }
+}
+@media(max-width: 800px) {
+    #grid {
+        display: block;
+    }
+
+    ol {
+        border-right: none;
+    }
+}
+
+/*캐싱: index.css를 받았다면 이 파일이 변하기 전까지는
+이 파일을 컴퓨터에 저장해두고 다시 사용하는 것*/
+/*중복을 제거해서 편리하게 만든다. 중복을 제거해 유지보수, 재사용성을 높임*/
+/*그래서 network를 덜 쓴다. 하핳*/
